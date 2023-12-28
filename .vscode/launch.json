@@ -1,5 +1,6 @@
 {
   "configurations": [
+
     {
       "name": "JLink: Debug Application",
       "cwd": "${workspaceFolder}/app",
@@ -8,7 +9,7 @@
       "servertype": "jlink",
       "request": "launch",
       "type": "cortex-debug",
-      "device": "STM32F401RE",
+      "device": "STM32G0B1RE",
       "runToEntryPoint": "main",
       "interface": "swd",
       "preLaunchTask": "build_debug"
@@ -21,7 +22,7 @@
       "servertype": "jlink",
       "request": "launch",
       "type": "cortex-debug",
-      "device": "STM32F401RE",
+      "device": "STM32G0B1RE",
       "runToEntryPoint": "main",
       "interface": "swd",
       "preLaunchTask": "build_bootloader"
@@ -34,7 +35,7 @@
       "servertype": "jlink",
       "request": "attach",
       "type": "cortex-debug",
-      "device": "STM32F401RE",
+      "device": "STM32G0B1RE",
       "runToEntryPoint": "main",
       "interface": "swd"
     },
@@ -46,7 +47,7 @@
       "servertype": "jlink",
       "request": "attach",
       "type": "cortex-debug",
-      "device": "STM32F401RE",
+      "device": "STM32G0B1RE",
       "runToEntryPoint": "main",
       "interface": "swd",
       "preLaunchTask": "build_bootloader"
@@ -58,7 +59,7 @@
       "servertype": "stutil",
       "request": "launch",
       "type": "cortex-debug",
-      "device": "STM32F401RE",
+      "device": "STM32G0B1RE",
       "runToEntryPoint": "main",
       "interface": "swd",
       "preLaunchTask": "build_debug"
@@ -70,7 +71,7 @@
       "servertype": "stutil",
       "request": "launch",
       "type": "cortex-debug",
-      "device": "STM32F401RE",
+      "device": "STM32G0B1RE",
       "runToEntryPoint": "main",
       "interface": "swd",
       "preLaunchTask": "build_bootloader"
@@ -82,7 +83,7 @@
       "servertype": "stutil",
       "request": "attach",
       "type": "cortex-debug",
-      "device": "STM32F401RE",
+      "device": "STM32G0B1RE",
       "runToEntryPoint": "main",
       "interface": "swd"
     },
@@ -93,7 +94,7 @@
       "servertype": "stutil",
       "request": "attach",
       "type": "cortex-debug",
-      "device": "STM32F401RE",
+      "device": "STM32G0B1RE",
       "runToEntryPoint": "main",
       "interface": "swd"
     }

@@ -16,10 +16,10 @@ BINARY = firmware
 ###############################################################################
 # Basic Device Setup
 
-LIBNAME			= opencm3_stm32f4
-DEFS				+= -DSTM32F4
-FP_FLAGS		?= -mfloat-abi=hard -mfpu=fpv4-sp-d16
-ARCH_FLAGS	= -mthumb -mcpu=cortex-m4 $(FP_FLAGS)
+LIBNAME			= opencm3_stm32g0
+DEFS				+= -DSTM32G0
+FP_FLAGS		?= -mfloat-abi=soft
+ARCH_FLAGS	= -mthumb -mcpu=cortex-m0plus $(FP_FLAGS)
 
 ###############################################################################
 # Linkerscript
@@ -33,7 +33,6 @@ LDFLAGS		+= -L$(OPENCM3_DIR)/lib
 
 DEFS		+= -I$(OPENCM3_DIR)/include
 DEFS		+= -I$(INC_DIR)
-DEFS		+= -I$(SHARED_INC_DIR)
 
 ###############################################################################
 # Executables
@@ -57,13 +56,10 @@ CSTD		?= -std=c99
 ###############################################################################
 # Source files
 
-OBJS		+= $(SRC_DIR)/$(BINARY).o
-OBJS		+= $(SRC_DIR)/bootloader.o
+OBJS		+= $(BINARY).o
+OBJS		+= $(SRC_DIR)/system.o
 OBJS		+= $(SRC_DIR)/timer.o
-OBJS		+= $(SRC_DIR)/info.o
-OBJS		+= $(SHARED_SRC_DIR)/core/system.o
-OBJS		+= $(SHARED_SRC_DIR)/core/uart.o
-OBJS		+= $(SHARED_SRC_DIR)/core/ring-buffer.o
+
 
 ###############################################################################
 # C flags

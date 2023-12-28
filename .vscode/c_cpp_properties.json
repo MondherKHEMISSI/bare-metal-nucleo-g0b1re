@@ -7,8 +7,8 @@
                 "${workspaceFolder}/bootloader/inc",
             ],
             "defines": [
-                "STM32F4",
-                "__ARM_ARCH_7EM__"
+                "STM32G0",
+                "__ARM_ARCH_6M__"
             ],
             "compilerPath": "/usr/bin/arm-none-eabi-gcc",
             "cStandard": "c99",
