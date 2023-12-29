@@ -3,12 +3,11 @@ ENTRY(reset_handler)
 MEMORY
 {
  ram (rwx) : ORIGIN = 0x20000000, LENGTH = 144K
- rom (rx) : ORIGIN = 0x08000000, LENGTH = 512K
+ rom (rx) : ORIGIN = 0x08000000, LENGTH = 32K
 }
 SECTIONS
 {
  .text : {
-  KEEP (*(.bootloader_section))
   *(.vectors)
   *(.text*)
   . = ALIGN(4);
