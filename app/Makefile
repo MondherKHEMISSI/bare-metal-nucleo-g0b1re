@@ -33,6 +33,7 @@ LDFLAGS		+= -L$(OPENCM3_DIR)/lib
 
 DEFS		+= -I$(OPENCM3_DIR)/include
 DEFS		+= -I$(INC_DIR)
+DEFS		+= -I$(SHARED_INC_DIR)
 
 ###############################################################################
 # Executables
@@ -58,8 +59,9 @@ CSTD		?= -std=c99
 
 OBJS		+= $(BINARY).o
 OBJS		+= $(SRC_DIR)/bootloader.o
-OBJS		+= $(SRC_DIR)/system.o
 OBJS		+= $(SRC_DIR)/timer.o
+OBJS		+= $(SHARED_SRC_DIR)/system.o
+OBJS		+= $(SHARED_SRC_DIR)/uart.o
 
 
 ###############################################################################

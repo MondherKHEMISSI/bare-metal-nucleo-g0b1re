@@ -10,6 +10,12 @@
     "pins.h": "c",
     "sync.h": "c",
     "ring-buffer.h": "c",
-    "flash_common_all.h": "c"
+    "flash_common_all.h": "c",
+    "usart.h": "c",
+    "usart_common_all.h": "c",
+    "gpio.h": "c",
+    "stm32g0b1xx.h": "c",
+    "system_stm32g0xx.h": "c",
+    "core_cm0plus.h": "c"
   }
 }
