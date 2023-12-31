@@ -60,6 +60,7 @@ CSTD		?= -std=c99
 OBJS		+= $(BINARY).o
 OBJS		+= $(SRC_DIR)/bootloader.o
 OBJS		+= $(SRC_DIR)/timer.o
+OBJS		+= $(SRC_DIR)/gpio.o
 OBJS		+= $(SHARED_SRC_DIR)/system.o
 OBJS		+= $(SHARED_SRC_DIR)/uart.o
 

@@ -3,6 +3,12 @@
 #include <libopencm3/stm32/rcc.h>
 #include <libopencm3/cm3/systick.h>
 #include <libopencm3/cm3/vector.h>
+#include <libopencm3/cm3/scb.h>
+
+void vector_setup(void) {
+  SCB_VTOR = BOOTLOADER_SIZE;
+}
+
 
 volatile uint64_t ticks = 0;
 
